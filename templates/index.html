@@ -27,9 +27,12 @@
 
 
 
+
 <head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
 
 <header id="header">
   <div class="intro">
@@ -42,8 +45,8 @@
           <h1 class="love">I love...</h1>
           <h1 class="element"></h1>
           <br> <br> <br> <br>
+        </div>
       </div>
-      
     </div>
   </div>
 </header>
@@ -77,43 +80,165 @@
   </nav>
 </div>
 
-<hr>
-
 <!-- academics -->
+<div id = "academics" class = "content-section">
+	<div class="col-md-8 col-md-offset-2 section-title text-center center">
+    <h2>Academics</h2>
+   </div>
+	<div class = "container">
+	
+    <div class = "academics_item" onclick = "switchOrder(this)">
+	    <div class="col-xs-6 col-md-3 interest">
+	      <div class = "hoverimg" onclick = >
+	      	<img src="../img/cuteCat1.jpeg" style="width:100%">     
+	        <div class = "hovertext">
+	        	<big>Cat 1</big>
+	        	<hr>
+	        	<small>The first cat</small>
+	        </div>
+	      </div>
+	  	</div>
+	  	<div class="col-xs-6 col-md-9 detail-text" hidden = true>
+	      <h1>Some text 1</h1>
+	    </div>
+	  </div>
 
-<div id = "academics">
+  	<div class = "academics_item" onclick = "switchOrder(this)">
+	    <div class="col-xs-6 col-md-3 interest">
+	      <div class = "hoverimg" onclick = >
+	      	<img src="../img/cuteCat2.jpeg" style="width:100%">     
+	        <div class = "hovertext">
+	        	<big>Cat 2</big>
+	        	<hr>
+	        	<small>The second cat</small>
+	        </div>
+	      </div>
+	  	</div>
+	  	<div class="col-xs-6 col-md-9 detail-text" hidden = true>
+	      <h1>Some text 2</h1>
+	    </div>
+	  </div>
+
+  	<div class = "academics_item" onclick = "switchOrder(this)">
+	    <div class="col-xs-6 col-md-3 interest">
+	      <div class = "hoverimg" onclick = >
+	      	<img src="../img/cuteCat3.jpeg" style="width:100%">     
+	        <div class = "hovertext">
+	        	<big>Cat 3</big>
+	        	<hr>
+	        	<small>The second cat</small>
+	        </div>
+	      </div>
+	  	</div>
+	  	<div class="col-xs-6 col-md-9 detail-text" hidden = true>
+	      <h1>Some text 3</h1>
+	    </div>
+	  </div>
+
+  	<div class = "academics_item" onclick = "switchOrder(this)">
+	    <div class="col-xs-6 col-md-3 interest">
+	      <div class = "hoverimg" onclick = >
+	      	<img src="../img/cuteCat4.jpeg" style="width:100%">     
+	        <div class = "hovertext">
+	        	<big>Cat 4</big>
+	        	<hr>
+	        	<small>The second cat</small>
+	        </div>
+	      </div>
+	  	</div>
+	  	<div class="col-xs-6 col-md-9 detail-text" hidden = true>
+	      <h1>Some text 4</h1>
+	    </div>
+	  </div>
+
+	</div>
+</div>
+
+<!-- portfolio -->
+
+<div id = "portfolio" class = "content-section">
   <div class = "container">
     <div class="col-md-8 col-md-offset-2 section-title text-center center">
-      <h2>Academics</h2>
+      <h2>Portfolio</h2>
     </div>
+
+    <!-- start of one specific portfolio item -->
     <div class="col-xs-6 col-md-3 interest">
-      <div class = "popup" onclick = "popup(this)">
+      <div class = "popup hoverimg" onclick = "popup(this)">
         <img src="../img/LynxStudent.png" style="width:100%">
+        <div class = "overlay">
+          <div class = "hovertext">
+            <big>Lynx App</big>
+            <hr>
+            <small>An IOS application that connects restaurants around the school with students</small>
+          </div>
+        </div>
         <span class="popuptext" id="myPopup">My friend and I are making an IOS application called Lynx. It lets business near school provide flash deal to students. We have completed the technical part of the app and are beginning to work on the beauty aspect of it. We also presented our idea to local businesses and got support from businesses like Tango Mango and Lee’s Burger. 
         </span>
       </div>
-      <h4>Lynx App</h4>
-      <p>An IOS application that connects restaurants around the school with students</p>
     </div>
+    <!-- end of one specific portfolio item -->
+    <!-- M3 item -->
     <div class="col-xs-6 col-md-3 interest">
-      <img src="../img/cuteCat2.jpeg" style="width:100%">
-      <h4>this is part 2</h4>
-      <p>Part two of my academics.</p>
+      <div class = "popup hoverimg" onclick = "popup(this)">
+        <img src="../img/M3.png" style="width:100%">
+        <img src="../img/M3-2.png" style="width:100%">
+        <div class = "overlay">
+          <div class = "hovertext">
+            <big>Car sharing math model</big>
+            <hr>
+            <small>A math model for the Moody's Mega Math Challenge</small>
+          </div>
+        </div>
+        <span class="popuptext" id="myPopup">I participated in Moody's Mega Math Challenge (M3) in the spring of 2016. In 14 hours, four of my friends and I developed an algorism that can determine the best car-sharing model. We won top 12 (semi-finalist) in the nation. The link to our paper is here: https://www.overleaf.com/read/mhxtdwxpyxcy
+        </span>
+      </div>
     </div>
+    <!-- M3 item -->
+    <!-- proactive item -->
     <div class="col-xs-6 col-md-3 interest">
-      <img src="../img/cuteCat3.jpeg" style="width:100%">
-      <h4>this is part 3</h4>
-      <p>Part three of my academics.</p>
+      <div class = "popup hoverimg" onclick = "popup(this)">
+        <img src="../img/proactive1.png" style="width:100%">
+        <img src="../img/proactive2.png" style="width:100%">
+        <img src="../img/proactive3.png" style="width:100%">
+        <div class = "overlay">
+          <div class = "hovertext">
+            <big>ProACTive</big>
+            <hr>
+            <small>An ACT tutoring business</small>
+          </div>
+        </div>
+        <span class="popuptext" id="myPopup">ProACTive is an ACT tutoring business that my friends and I started. We made a website to spread the words of our business. The link to our website is here: https://proactivetutors.com/
+        </span>
+      </div>
     </div>
+    <!-- proactive item -->
+    
     <div class="col-xs-6 col-md-3 interest">
-      <img src="../img/cuteCat4.jpeg" style="width:100%">
-      <h4>this is part 4</h4>
-      <p>Part four of my academics.</p>
+      <div class = "popup hoverimg" onclick = "popup(this)">
+        <img src="../img/softImage.png" style="width:100%">
+        <hr><hr>
+        <img src="../img/product.jpg" style="width:100%">
+        <div class = "overlay">
+          <div class = "hovertext">
+            <big>softImage</big>
+            <hr>
+            <small>A MacOS application that automatically batch edits photos</small>
+          </div>
+        </div>
+        <span class="popuptext" id="myPopup">I created softImage and gave it to my friend who takes portrait photos for other students at my school. The software batch edits pictures by adjusting brightness, contrast and removing blemishes. As the picture shows, the software can be used to edit pictures like group photos or portrait pictures. The github link to the project is below https://github.com/xuyifan0720/auto_editor
+        </span>
+      </div>
     </div>
-
+    
   </div>
 </div>
 
+<div id="end-of-page">
+  <div class="container text-center">
+    <p class = "end-text"> Created by Yifan Xu with HTML, CSS and JavaScript.</p>
+  </div>
+</div>
 
 
 
